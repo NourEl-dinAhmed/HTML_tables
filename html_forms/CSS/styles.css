@@ -1,0 +1,33 @@
+table {
+  margin: 50vh auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+tr:first-child {
+  border-top: 5px solid inherit;
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(48, 133, 193);
+}
+
+tr:last-child {
+  border-bottom: 5px solid inherit;
+  border-radius: 0 0 10px 10px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+tr > th,
+tr > td {
+  padding: 20px;
+  color: white;
+  flex: 1 90px;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+}
+
+tr {
+  background-color: rgb(39, 125, 117);
+}
