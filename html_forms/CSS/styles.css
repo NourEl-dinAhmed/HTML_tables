@@ -10,6 +10,12 @@ tr:first-child {
   background-color: rgb(48, 133, 193);
 }
 
+span {
+  border: 2px dashed #fff;
+  padding: 6px;
+  border-radius: 5px;
+}
+
 tr:last-child {
   border-bottom: 5px solid inherit;
   border-radius: 0 0 10px 10px;
