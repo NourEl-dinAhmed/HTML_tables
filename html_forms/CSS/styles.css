@@ -28,6 +28,14 @@ tr > td {
   text-align: right;
 }
 
+tr + tr {
+  border-top: 2px dashed #fff;
+}
+
 tr {
   background-color: rgb(39, 125, 117);
+}
+
+.tr-even {
+  background-color: rgb(55, 186, 174);
 }
