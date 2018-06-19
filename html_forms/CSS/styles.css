@@ -13,6 +13,12 @@ tbody {
   background-color: rgb(48, 133, 193);
 }
 
+thead {
+  border-top: 5px solid inherit;
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(48, 133, 193);
+}
+
 span {
   border: 2px dashed #fff;
   padding: 6px;
