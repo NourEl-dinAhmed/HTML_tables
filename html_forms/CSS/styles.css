@@ -1,10 +1,12 @@
+
+/* Type Selectors */
+
 table {
   margin: 50vh auto;
-  display: inline-flex;
-  flex-wrap: wrap;
+  border-spacing: 0;
 }
 
-thead {
+thead tr{
   border-top: 5px solid inherit;
   border-radius: 15px 15px 0 0;
   background-color: rgb(48, 133, 193);
@@ -16,13 +18,22 @@ span {
   border-radius: 5px;
 }
 
-tr:last-child {
-  border-bottom: 5px solid inherit;
-  border-radius: 0 0 10px 10px;
+tbody tr {
+  background-color: rgb(39, 125, 117);
 }
 
-.display-flex {
+/* Class Selectors */
+
+body, 
+tr {
   display: flex;
+}
+
+/* DRY Selectors */
+
+tbody tr:last-child {
+  border-bottom: 5px solid inherit;
+  border-radius: 0 0 10px 10px;
 }
 
 tr > th,
@@ -34,14 +45,10 @@ tr > td {
   text-align: right;
 }
 
-tr + tr {
+tr:not(:only-child) {
   border-top: 2px dashed #fff;
 }
 
-tr {
-  background-color: rgb(39, 125, 117);
-}
-
-.tr-even {
+tbody tr:nth-of-type(even) {
   background-color: rgb(55, 186, 174);
 }
