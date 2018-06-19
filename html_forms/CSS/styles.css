@@ -1,16 +1,7 @@
-
-/* Type Selectors */ 
-
 table {
   margin: 50vh auto;
   display: inline-flex;
   flex-wrap: wrap;
-}
-
-tbody {
-  border-top: 5px solid inherit;
-  border-radius: 15px 15px 0 0;
-  background-color: rgb(48, 133, 193);
 }
 
 thead {
@@ -25,8 +16,17 @@ span {
   border-radius: 5px;
 }
 
-th,
-td {
+tr:last-child {
+  border-bottom: 5px solid inherit;
+  border-radius: 0 0 10px 10px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+tr > th,
+tr > td {
   padding: 20px;
   color: white;
   flex: 1 90px;
@@ -34,27 +34,14 @@ td {
   text-align: right;
 }
 
-/* Class Selecotrs*/
-
-.display-flex {
-  display: flex;
-}
-
-/* DRY Selectos*/
-
-tr:last-child {
-  border-bottom: 5px solid inherit;
-  border-radius: 0 0 10px 10px;
-}
-
 tr + tr {
   border-top: 2px dashed #fff;
 }
 
-tr:not(tr:first-child) {
+tr {
   background-color: rgb(39, 125, 117);
 }
 
-tr:nth-of-type(even) {
+.tr-even {
   background-color: rgb(55, 186, 174);
 }
